@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeWheels</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="Pictures/icon.png">
+<style>
+    body{
+        background: linear-gradient(1000deg,green,blue);
+    }
+    .calculator-section,.trade-in-section {
+        margin-top: 10px;
+        width: 80%;
+        margin-left: 45px;
+        padding: 25px;
+        border:5px dashed rgb(7, 197, 0);
+        border-radius: 25px;
+        background: rgba(0, 0, 0, 0.7);
+        font-size: 30px;
+        box-shadow: 5px 5px 5px rgba(7, 7, 3, 0.7);
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: sans-serif;
+        
+        
+    }
+    input, select, textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #222;
+    color: white;
+    }
+
+     button {
+    background: #28a745; 
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+     box-shadow: 5px 5px 5px rgba(7, 7, 7, 0.7);
+     
+     
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>LuxeWheels</h1>
+        <ul >
+            <li><a href="index.html">HOME |</a></li>
+            <li><a href="catalog.html">CATALOG/CARS |</a></li>
+            <li><a href="services.html">SERVICES |</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+        <button onclick="window.location.href='login.html';">LOGIN</button>
+    </header>
+    <section class="calculator-section"> 
+    <h2>Car Financing Calculator</h2>
+    <div class="calc-box">
+        <input type="number" id="carPrice" placeholder="Vehicle Price ($)">
+        <input type="number" id="downPayment" placeholder="Down Payment ($)">
+        <select id="loanTerm">
+            <option value="12">12 Months</option>
+            <option value="24">24 Months</option>
+            <option value="36">36 Months</option>
+            <option value="48">48 Months</option>
+        </select>
+        <button onclick="calculateLoan()" class="calculatebtn">Calculate</button>
+        
+        <div id="result">
+            <h3>Monthly Payment: <span id="monthlyAmount">$0</span></h3>
+        </div>
+    </div>
+</section>
+<section class="trade-in-section">
+    <h2>Trade-In Your Car</h2>
+    <p>Fill in your car details and get an estimate.</p>
+    
+    <form id="tradeInForm">
+        <input type="text" id="userCarModel" placeholder="Your car model " required>
+        <input type="number" id="userCarYear" placeholder="Release date" required>
+        <input type="number" id="userCarMileage" placeholder="Mileage (km)" required>
+        
+        <textarea id="carCondition" placeholder="Condition of the car (indicate any defects)"></textarea>
+        
+        <button type="submit">Submit application</button>
+    </form>
+    
+    <div id="formMessage" style="display:none; color: gold; margin-top: 10px;">
+        Thank you. Our specialist will contact you within 24 hours.
+    </div>
+</section>
+<script src="JavaScript/services.js">
+</script>
+</body>
+</html>

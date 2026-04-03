@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeWheels</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="Pictures/icon.png">
+</head>
+<body>
+    <div class="main-photo">
+    <header>
+        <h1>LuxeWheels</h1>
+        <ul >
+            <li><a href="index.html">HOME |</a></li>
+            <li><a href="catalog.html">CATALOG/CARS |</a></li>
+            <li><a href="services.html">SERVICES |</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+        <button onclick="window.location.href='login.html';">LOGIN</button>
+    </header>
+    <main>
+     <div id="hero-section">
+        <p style="margin-top: 100px;">Car buying</p>
+        <p>shaped to your life</p>
+        <search id="search-box">
+        <input class="search-input" type="search" placeholder="🔍︎ Search by make model body type" > 
+        <button >Search</button>
+        </search>
+        <h1 style="color: beige;font-family: sans-serif;">--OR--</h1>
+        <div class="filter-box">
+            <select name="make-model">
+                <option value="" disabled selected>Make Model</option>
+                <option value="BMW">BMW</option>
+                <option value="BMW">BMW</option>
+                <option value="BMW">BMW</option>
+                <option value="BMW">BMW</option>
+            </select>
+            <select name="make-body">
+        <option value="" disabled selected>Make Body</option>
+        <option value="sedan">Sedan</option>
+        <option value="suv">SUV</option>
+    </select>
+
+    <select name="price">
+        <option value="" disabled selected>Price</option>
+        <option value="low">Cheap</option>
+        <option value="high">Expensive</option>
+    </select>
+            
+        </div>
+     </div>
+
+    </main>
+<div id="product-section">
+    <h2>Browse by Vehicle Type</h2>
+    <div id="cars_article">
+    <article style="background-image: url('Pictures/sedan.png');"> <h1>SEDAN</h1> </article>
+    <article style="background-image: url('Pictures/sportcar.png');"><h1>SPORTS CAR  </h1></article>
+    <article style="background-image: url('Pictures/truck.png');"><h1>TRUCKS</h1></article> 
+</div>
+<p style="grid-column: 1 / -1; max-width: 600px; margin: 20px auto; font-size: 20px; color: azure;">
+        Explore our curated selection of premium vehicles. From elegant sedans for your daily drive to powerful sports cars and reliable trucks for work, find the perfect wheels shaped to your life.
+    </p>
+</div>
+</div>
+
+</body>
+</html>

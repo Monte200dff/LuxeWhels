@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeWheels</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="Pictures/icon.png">
+</head>
+<body>
+    <div class="main-photo">
+    <header>
+        <h1>LuxeWheels</h1>
+        <ul >
+            <li><a href="index.html">HOME |</a></li>
+            <li><a href="catalog.html">CATALOG/CARS |</a></li>
+            <li><a href="services.html">SERVICES |</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+        <button onclick="window.location.href='login.html';">LOGIN</button>
+    </header>
+    <main >
+    <div><h1></h1></div>
+    <div class="filter-box" style="width: 33%; margin: auto;">
+            <select name="make-model" id="select_model">
+                <option value="" >Make Model</option>
+                <option value="bmw">BMW</option>
+                <option value="Mercedes-benz">Mercedes-Benz</option>
+                <option value="porsche">Porsche</option>
+                <option value="tesla">Tesla</option>
+                <option value="toyota">Toyota</option>
+                <option value="audi">Audi</option>
+                <option value="volvo">Volvo</option>
+                <option value="scania">Scania</option>
+                <option value="man">MAN</option>
+                <option value="daf">DAF</option>
+                <option value="iveco">Iveco</option>
+                <option value="renault">Renault</option>
+            </select>
+            <select name="make-body" id="select_body">
+        <option value="" >Make Body</option>
+        <option value="sedan">Sedan</option>
+        <option value="suv">SUV</option>
+        <option value="coupe">Coupe</option>
+        <option value="truck">Truck</option>
+            </select>
+
+            <select name="price" id="select_price">
+        <option value="" >Price</option>
+        <option value="low">Cheap</option>
+        <option value="10000-50000">10000-50000</option>
+        <option value="50000-100000">50000-100000</option>
+        <option value="100000-150000">100000-150000</option>
+        <option value="150000-200000">150000-200000</option>
+        <option value="200000-250000">200000-250000</option>
+        <option value="250000-300000">250000-300000</option>
+        <option value="300000+">300000+</option>
+            </select>
+            
+    </div>
+     
+    <div class="product-div" >
+            
+    </div>
+    </main>
+<script src="JavaScript/cars.js"></script>
+</body>
+</html>
